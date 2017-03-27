@@ -1,0 +1,27 @@
+
+
+curl -i https://api.github.com/users/octocat/orgs
+curl -i https://api.github.com/users/ashgit1
+curl -i https://api.github.com/users/ashgit1/orgs
+curl -i https://api.github.com/users/ashgit1/REPOS
+
+
+to get all the repos for a user:
+----------------------------------
+curl -i https://api.github.com/users/ashgit1/repos
+
+
+GET /repos/:owner/:repo/readme
+
+
+curl -i https://api.github.com/users/ashgit1/repos/:ashgit1
+
+
+
+curl -i -X PUT -H 'Authorization: <token>' -d '{"path": "test4.txt", "message": "Initial Commit", "committer": {"name": "<name>", "email": "<email>"}, "content": "bXkgbmV3IGZpbGUgY29udGVudHM=", "branch": "master"}' https://api.github.com/repos/InViN-test/test_repo1/contents/‌​test4.txt
+
+
+create a repo:
+--------------
+curl -i -H 'Authorization: <token>' -d '{"name": "test_repo1", "message": "Initial Commit", "committer": {"name": "<name>", "email": "<email>"}, "content": "bXkgbmV3IGZpbGUgY29udGVudHM=", "note":"Test Commit"}' https://api.github.com/user/repos
+
